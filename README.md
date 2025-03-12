@@ -1,9 +1,11 @@
 # Projeto 2 de Administração de sistemas abertos
 
-Este projeto demonstra a integração do Vagrant, Ansible e Docker para configurar e gerenciar ambientes de desenvolvimento e produção de forma automatizada. O projeto tem conta com 3 containers:
-Container 1 - webproxy usando uma imagem customizada do nginx
-Container 2 - webserver usando uma imagem do cms Wordpress
-Container 3 - database usando uma imagem do mysql
+Este projeto demonstra a integração do Vagrant, Ansible e Docker para configurar e gerenciar ambientes de desenvolvimento e produção de forma automatizada.
+O projeto conta com 3 containers:
+
+- Container 1 - webproxy usando uma imagem customizada do nginx que realiza loadbalance na camada 4/tcp
+- Container 2 - webserver usando uma imagem do cms Wordpress
+- Container 3 - database usando uma imagem do mysql
 
 ## Estrutura do Projeto
 
@@ -40,4 +42,4 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina host:
 
 3. **Acesse os serviços:**
 
-   Os serviços Docker agora estão em execução, e pagina inicial do wordpress pode ser acessada no endereço `http://192.168.57.10:8080`
+   Os serviços Docker agora estão em execução, e a pagina inicial do wordpress pode ser acessada no endereço http://192.168.57.10:8080
