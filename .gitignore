@@ -1,1 +1,3 @@
-/nginx_personal
+nginx_personal/
+.vagrant/
+
